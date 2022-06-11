@@ -8,15 +8,8 @@
         </div>
 
         <div>
-            <p>published: 10.06.2022, 20:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Este es la primera plantilla del blog</p>
+            {% for post in posts %} {{ post }}{% endfor %}
         </div>
 
-        <div>
-            <p>published: 10.06.2022, 20:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>segundo post alternativo del blog </p>
-        </div>
     </body>
 </html>
