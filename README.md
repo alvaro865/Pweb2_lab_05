@@ -69,6 +69,11 @@
 -   Especificar paso a paso la creación del blog en su informe.
 -   Crear un video tutorial donde realice las operaciones CRUD (URL public reproducible online)
 -   Adjuntar URL del video en el informe.
+    
+    Se pudo lograr la grabacion con la aplicacion tldv.io
+    https://tldv.io/app/meetings/62a674e791d06a0014584c3f/
+
+
 #
 
 ## CUESTIONARIO
