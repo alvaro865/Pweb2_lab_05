@@ -77,7 +77,8 @@
     https://legacy.python.org/dev/peps/pep-0008/
     PEP8Es una guía de estilo de código compilada por la comunidad de Python para el lenguaje Python. La unificación del estilo de codificación 
     mejora la legibilidad del código y reduce el costo del desarrollo del equipo.
-    1 convención de nomenclatura
+    - 1 Convención de nomenclatura:
+        
         En PEP8, la denominación de variables debe ser significativa, evitar nombres de variables sin sentido y evitar usar l (L minúscula), 
         I (i mayúscula) y O (fácil de confundir) como variables de un solo carácter. Las convenciones de nomenclatura para paquetes, clases, 
         funciones y variables globales son las siguientes:
@@ -85,7 +86,8 @@
         Las clases y excepciones llevan el nombre deCapWords(Caso camel, primera letra en mayúscula) formulario, como ModelTest
         Los parámetros de la función llevan el nombrelower_with_underForma (minúsculas y subrayado), como def test (a, b, c)
         
-    2 Diseño de código
+    - 2 Diseño de código:
+        
         En el proceso de escribir Python, se usa cada nivel de sangría4 espacios , Evitar el uso deTab Sangría (diferentes editores tienen 
         diferentes anchos de tabulación), no para mezclar Tab y espacios
         1) Al construir listas, diccionarios, tuplas y asignaciones de hiperparámetros, se deben agregar espacios al final de las comas, punto
@@ -94,25 +96,29 @@
         3) Agregue espacios a ambos lados de los operadores binarios (asignación, marioneta, comparación y aritmética)
         4) Cuando se utilizan símbolos de asignación para parámetros o valores de parámetros predeterminados, no utilice espacios en ambos lados
         5) No utilice espacios para alinear verticalmente marcas de varias líneas, lo que aumentará la carga de mantenimiento
-    3 Estilo de importación
+    - 3 Estilo de importación
+        
         El módulo importado debe estar en la parte superior del archivo, después del comentario del módulo y la cadena de documentos, y antes de la 
         variable o constante global. El orden de importación debe ordenarse de acuerdo con la generalidad del paquete de la biblioteca.
         1) Importación de biblioteca estándar
         2) Importación de biblioteca de terceros
         3) Importación de la biblioteca de aplicaciones locales
-    4 comentarios
+    - 4 Comentarios:
+        
         1) comentario de línea
         Agregue un comentario después de una oración de código, pero si el significado del código es obvio, no se requieren comentarios en línea. Los 
         comentarios en línea deben estar separados por al menos dos espacios y códigos.
         2) Bloquear comentario
         Comentarios agregados antes del código, cada línea en el bloque de comentarios comienza con # y un espacio, y el bloque de comentarios debe estar 
         en blanco por 1 línea.
-    5 Cadena de documentación
+    - 5 Cadena de documentación
+        
         La cadena de documentos sirve para anotar módulos, funciones y clases. Cuando se anotan funciones / clases, la primera línea de la clase y función 
         se describe generalmente usando caracteres de documento. Después de ser descrita, puede ser extraída por doc. Para mantener la coherencia, utilice 
         tres pares de comillas dobles antes y después de la cadena de documentos, consulte la confirmación correspondientePEP 257. La siguiente es la función 
         y la descripción de los parámetros de la función.
-    6 sugerencias de codificación
+    - 6 Sugerencias de codificación:
+        
         Evite el uso de operadores + o + = para acumular cadenas. Puede agregar cada cadena a la lista y, finalmente, unirse a la lista a través de join; use 
         "es" o "es tanto como sea posible
         not ”reemplaza“ == ”, por ejemplo, si x no es None es mejor que si x
@@ -120,6 +126,11 @@
         La secuencia de juicio está vacía, use not first, por ejemplo, si not seq es mejor que si len (seq)
         
 -   ¿Qué diferencias existen entre EasyInstall, pip, y PyPM?
+    
+    Pip : es un gestor de paquetes y  es un contenedor para EasyInstall
+    EasyInstall : es una utilidad de instalacion basada en codigo fuente
+    PyPM : simplifica las tareas de localizacion, instalacion, actualizacion y eliminacion de paquetes de python
+    
 -   En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían agregar a este archivo?
 -   Utilice ```python manage.py shell``` para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
 
