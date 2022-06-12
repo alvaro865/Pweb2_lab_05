@@ -127,11 +127,25 @@
         
 -   ¿Qué diferencias existen entre EasyInstall, pip, y PyPM?
     
-    Pip : es un gestor de paquetes y  es un contenedor para EasyInstall
-    EasyInstall : es una utilidad de instalacion basada en codigo fuente
-    PyPM : simplifica las tareas de localizacion, instalacion, actualizacion y eliminacion de paquetes de python
+    - Pip : es un gestor de paquetes y  es un contenedor para EasyInstall
+    - EasyInstall : es una utilidad de instalacion basada en codigo fuente
+    - PyPM : simplifica las tareas de localizacion, instalacion, actualizacion y eliminacion de paquetes de python
     
--   En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían agregar a este archivo?
+-   En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían
+    agregar a este archivo?
+    
+    Observamos el contenido de .gitignore y algunos archivos extra que pueden entrar seria:
+    - eggs
+    - parts
+    - bin
+    - var
+    - installed.cfg
+    - .settings
+    - .project
+    - .mo
+    - .tox
+    - .covarege
+    
 -   Utilice ```python manage.py shell``` para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
 
 ## REFERENCIAS
