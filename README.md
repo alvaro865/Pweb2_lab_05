@@ -147,6 +147,7 @@
     - .covarege
     
 -   Utilice ```python manage.py shell``` para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
+    Se observo que los cambios que se hicieron fueron en db.sqlite3
 
 ## REFERENCIAS
 -   https://www.w3schools.com/python/python_reference.asp
