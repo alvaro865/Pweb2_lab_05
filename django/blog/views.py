@@ -1,3 +1,4 @@
+from contextlib import redirect_stderr
 from django.db import reset_queries
 from django.shortcuts import redirect, render, get_object_or_404
 from django.utils import timezone
@@ -43,8 +44,6 @@ def post_edit(request, pk):
 
 def post_delete(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    if request.method == "POST":
-        post.delete()
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html',{'posts': posts}) 
+    post.delete()
+    return redirect('post_list')
 
