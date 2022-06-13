@@ -67,12 +67,52 @@
 ## EJERCICIOS PROPUESTOS
 -   Crea un blog sencillo en un entorno virtual utilizando la guía: https://tutorial.djangogirls.org/es/django_start_project/
 -   Especificar paso a paso la creación del blog en su informe.
+    
+    -   Crea el directorio para trabajar Django dentro de un entorno virtual:
+    
+        mkdir django
+
+    -   Crear el entorno virtual dentro del directorio creado:
+    
+        cd django
+        virtualenv -p python3 myvenv
+    
+    -   Activamos el entorno virtual
+        
+        "myvenv/Scripts/activate"
+    
+    -   Instalamos django con pip
+    
+        pip install Django
+    
+    -   Dentro del entorno virtual. Crearemos un proyecto Django que se llame ```Proyecto```
+    
+        django-admin startproject mysite .
+       
+    -   Creamos nuestra app
+    
+        python manage.py starapp blog
+    
+    -   Crearemos nuestro primer modelo
+        
+        Luego tenemos que mandarlo a nuestra base de datos
+        python manage.py makemigrations blog
+        python manage.py migrate blog
+        
+    -   Registramos nuestro modelo
+    -   Ahora queremos crear nuestro super usuario para controlarlo todo
+        
+        python manage.py createsuperuser
+    
+    
 -   Crear un video tutorial donde realice las operaciones CRUD (URL public reproducible online)
 -   Adjuntar URL del video en el informe.
     
     Se pudo lograr la grabacion con la aplicacion tldv.io
+    
     https://tldv.io/app/meetings/62a674e791d06a0014584c3f/
 
+    Adelantar hasta 00:55 a partir de ese momento se grabo
 
 #
 
