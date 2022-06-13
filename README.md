@@ -80,6 +80,7 @@
     -   Activamos el entorno virtual
         
         "myvenv/Scripts/activate"
+        - ![Ejercicio 1](imagenes/prueba1.png)
     
     -   Instalamos django con pip
     
@@ -95,15 +96,38 @@
     
     -   Crearemos nuestro primer modelo
         
+        - ![Ejercicio 1](imagenes/prueba2.png)
         Luego tenemos que mandarlo a nuestra base de datos
         python manage.py makemigrations blog
         python manage.py migrate blog
         
     -   Registramos nuestro modelo
+    
+        - ![Ejercicio 1](imagenes/prueba3.png)
+        
     -   Ahora queremos crear nuestro super usuario para controlarlo todo
         
         python manage.py createsuperuser
+        
+    -   Desarrollo en urls.py
     
+        - ![Ejercicio 1](imagenes/prueba4.png)
+    
+    -   Desarrollo en views.py
+    
+        - ![Ejercicio 1](imagenes/prueba5_1.png)
+        
+        - ![Ejercicio 1](imagenes/prueba5_2.png)
+     
+    -   Desarrollo en /templates/blog/
+    
+        - ![Ejercicio 1](imagenes/prueba6_1.png)
+        
+        - ![Ejercicio 1](imagenes/prueba6_2.png)
+        
+        - ![Ejercicio 1](imagenes/prueba6_3.png)
+        
+        - ![Ejercicio 1](imagenes/prueba6_4.png)
     
 -   Crear un video tutorial donde realice las operaciones CRUD (URL public reproducible online)
 -   Adjuntar URL del video en el informe.
@@ -192,6 +216,9 @@
     - .covarege
     
 -   Utilice ```python manage.py shell``` para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
+
+    - ![Ejercicio 1](imagenes/cuestionario.png)
+    
     Se observo que los cambios que se hicieron fueron en db.sqlite3
 
 ## REFERENCIAS
